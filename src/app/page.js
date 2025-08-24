@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div className='min-h-[100dvh] bg-[#E7F1E9] w-full pt-9  '>
+    <div className='min-h-[100dvh] bg-[#E7F1E9] w-full   '>
       <div className='c flex flex-col-reverse md:flex-row gap-y-5 items-center justify-between w-full'>
         <div className=' '>
           <p className='text-gray-500 uppercase text-[15px]'>free delivery worldwide</p>
@@ -13,7 +13,7 @@ export default function Home() {
           <p className='text-green'> <span className='block md:mt-3 mt-2 '>Enhance Your Radiance with Clean, Science-Driven Skincare-Cruelty-Free,</span> Sustainable, and Enriched with Antioxidants for Healthy, Timeless Skin </p>
         </div>
         <div className=' md:w-[500px]'>
-          <img className=' w-full ' src='/hero.png' />
+          <img className='  ' src='/hero.png' />
         </div>
       </div>
     </div>
