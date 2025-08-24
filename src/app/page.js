@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
   return (
     <div className='min-h-[100dvh] bg-[#E7F1E9] w-full   '>
-      <div className='c flex flex-col-reverse md:flex-row gap-y-5 items-center justify-between w-full'>
+      <div className='c flex flex-col-reverse md:flex-row gap-y-3 items-center justify-between w-full'>
         <div className=' '>
           <p className='text-gray-500 uppercase text-[15px]'>free delivery worldwide</p>
           <h2 className='capitalize font-galano md:text-6xl text-3xl text-green-text md:mb-3 mb-2'>
