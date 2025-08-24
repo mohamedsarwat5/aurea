@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
 
-        <div className='md:w-[500px] md:order-2'>
+        <div className='md:w-[500px] md:order-3'>
           <img className='block w-full' src='/hero.png' />
         </div>
 
