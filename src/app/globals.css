@@ -48,7 +48,11 @@
     @apply overflow-hidden min-h-[100dvh] p-6 md:px-[120px] py-5
 }
 
-.b:hover {
+.b:hover, .button:hover {
     cursor: pointer;
     @apply bg-green/85
+}
+
+.button{
+    @apply transition-all duration-200 capitalize px-4 py-2 rounded-lg text-hero bg-green
 }

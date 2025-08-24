@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Home() {
@@ -25,6 +26,8 @@ export default function Home() {
           <p className='text-green '>
             Sustainable, and Enriched with Antioxidants for Healthy, Timeless Skin
           </p>
+          <div className='border border-dashed border-green mt-7 mb-5'></div>
+          <Link className='button w-fit !px-6' href={'/'}>order now</Link>
         </div>
 
 

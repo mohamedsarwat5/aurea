@@ -29,7 +29,7 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <button className='md:inline-block hidden b transition-all duration-200 capitalize px-4 py-2 rounded-lg text-hero bg-green'>order now</button>
+            <button className='md:inline-block hidden b button'>order now</button>
         </nav>
     )
 }
