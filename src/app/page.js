@@ -3,9 +3,9 @@ import React from 'react'
 export default function Home() {
   return (
     <div className='min-h-[100dvh] bg-[#E7F1E9] w-full'>
-      <div className='c flex flex-col-reverse md:flex-row gap-5 md:gap-y-0 items-center justify-between w-full'>
+      <div className='c flex flex-col md:flex-row gap-5 md:gap-y-0 items-center justify-between w-full'>
 
-        <div className='flex flex-col md:gap-y-0'>
+        <div className='flex flex-col md:gap-y-0 order-1'>
           <p className='text-gray-500 uppercase text-[15px]'>free delivery worldwide</p>
 
           <div className='flex flex-col'>
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
 
-        <div className='md:w-[500px]'>
+        <div className='md:w-[500px] md:order-2'>
           <img className='block w-full' src='/hero.png' />
         </div>
 
