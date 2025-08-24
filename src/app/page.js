@@ -3,12 +3,12 @@ import React from 'react'
 export default function Home() {
   return (
     <div className='min-h-[100dvh] bg-[#E7F1E9] w-full'>
-      <div className='c flex flex-col md:flex-row  md:gap-y-0 items-center justify-between w-full'>
+      <div className='c flex flex-col md:flex-row gap-4 md:gap-y-0 items-center md:justify-between w-full'>
 
-        <div className='flex flex-col  order-1'>
+        <div className='flex flex-col  order-1 '>
           <p className='text-gray-500 uppercase text-[15px]'>free delivery worldwide</p>
 
-          <div className='flex flex-col'>
+          <div className='flex flex-col '>
             <h2 className='capitalize font-galano md:text-6xl text-3xl text-green-text   '>
               feed your skin,
             </h2>
