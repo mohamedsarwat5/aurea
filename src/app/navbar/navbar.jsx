@@ -47,7 +47,7 @@ export default function Navbar() {
 
                 <ul className='flex flex-col p-5 pt-16 gap-y-4'>
                     {links.map(({path, name} , i)=>(
-                        <Link className={`  font-medium transition-all duration-200 relative w-fit text-dark-green a ${activePath === path ? ' active' : ''} `} key={i} href={path}>{name}</Link>
+                        <Link onClick={handleOpen} className={`  font-medium transition-all duration-200 relative w-fit text-dark-green a ${activePath === path ? ' active' : ''} `} key={i} href={path}>{name}</Link>
                     ))}
                 </ul>
         </div>
