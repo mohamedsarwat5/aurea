@@ -4,7 +4,7 @@ import Header from '../Header.jsx/Header'
 
 export default function Benefits() {
   return (
-    <div>
+    <div className='bg-light'>
 
       <div className=' c flex flex-col justify-center gap-9 px-9'>
 
