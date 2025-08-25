@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
 import { Poppins } from 'next/font/google'
 import Navbar from "./navbar/navbar";
 
@@ -18,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` font-poppins ${PoppinsFont.variable}`}
+        className={`md:pt-[60px] bg-[#E7F1E9] pt-16   font-poppins ${PoppinsFont.variable}`}
       >
         <Navbar />
         {children}

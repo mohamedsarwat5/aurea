@@ -19,6 +19,7 @@
     --color-section: #F7F9F6;
     --color-green-text: #313420;
     --color-hero: #E7F1E9;
+    --color-dark-green: #34402f;
 }
 
 
@@ -48,11 +49,21 @@
     @apply overflow-hidden min-h-[100dvh] p-6 md:px-[120px] py-5
 }
 
-.b:hover, .button:hover {
+.b:hover, .button:hover  {
     cursor: pointer;
     @apply bg-green/85
 }
 
 .button{
     @apply transition-all duration-200 capitalize px-4 py-2 rounded-lg text-hero bg-green
+}
+
+
+h5{
+    color: #426234;
+}
+
+
+.box{
+    @apply md:w-[200px] md:h-[180px] w-[170px] h-[160px]  text-light-white border  border-light-white flex  justify-center  flex-col gap-1 rounded-xl
 }
