@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Banner from './Banner/Banner'
 import Products from './Products/Products'
+import Benefits from './benefits/page'
 
 export default function Home() {
   return (<>
@@ -40,6 +41,7 @@ export default function Home() {
       </div>
     </div>
     <Banner></Banner>
+    <Benefits></Benefits>
     <Products></Products>
   </>)
 }
