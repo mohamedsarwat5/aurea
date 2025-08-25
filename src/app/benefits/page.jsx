@@ -20,7 +20,7 @@ export default function Benefits() {
             {beData.map(({ title, desc, icon }, i) => (<div key={i} className='flex flex-col gap-6 '>
 
               <div className='flex items-center gap-x-3  ' >
-                <div className='md:w-20 md:h-20 w-14 h-14 bg-green p-3  rounded-lg flex items-center justify-center'>
+                <div className='md:w-20 md:h-20 w-14 h-14 bg-green p-3 shrink-0 rounded-lg flex items-center justify-center'>
                   {icon}
                 </div>
                 <div className='flex flex-col'>
