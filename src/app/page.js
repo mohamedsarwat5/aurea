@@ -18,7 +18,7 @@ export default function Home() {
               feed your skin,
             </h2>
             <h2 className='capitalize font-galano md:text-6xl text-3xl text-green-text mb-2'>
-              find your glow
+              find your glow.
             </h2>
           </div>
 

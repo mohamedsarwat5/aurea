@@ -8,7 +8,7 @@ export default function Header({ title, desc  }) {
                 <h3 className='text-gray-500 text-[17px] capitalize'>{title} </h3>
                 <span className='w-[15px] h-[2px] bg-gray-500'></span>
             </div>
-            <h4 className='font-semibold md:text-4xl text-[18px] text-dark-green mt-3 capitalize'>{desc}</h4>
+            <h4 className='font-semibold md:text-4xl text-[18px] text-dark-green mt-1 md:mt-3 capitalize'>{desc}</h4>
         </div>
     )
 }
