@@ -8,7 +8,7 @@ import About from './about/page'
 export default function Home() {
   return (<>
     <div className='min-h-[100dvh] bg-[#E7F1E9] w-full'>
-      <div className='c flex flex-col md:flex-row gap-4 md:gap-y-0 items-center justify-center md:justify-between w-full'>
+      <div className='c size flex flex-col md:flex-row gap-4 md:gap-y-0 items-center justify-center md:justify-between w-full'>
 
         <div className='flex flex-col  order-1 '>
           <p className='text-gray-500 uppercase text-[15px]'>free delivery worldwide</p>

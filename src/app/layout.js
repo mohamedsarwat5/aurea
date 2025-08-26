@@ -18,9 +18,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body
-        className={`md:pt-[60px] bg-[#E7F1E9] pt-16   font-poppins ${PoppinsFont.variable}`}
+        className={`md:pt-[60px] bg-[#E7F1E9] pt-16   duration-200 transition-all font-poppins ${PoppinsFont.variable}`}
       >
         <Navbar />
         {children}

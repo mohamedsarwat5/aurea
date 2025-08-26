@@ -6,7 +6,7 @@ export default function Benefits() {
   return (
     <div className='bg-light'>
 
-      <div className=' c flex flex-col justify-center gap-9 '>
+      <div className=' c size flex flex-col justify-center gap-9 '>
 
         <Header title='Benefits' desc='Auréa – Healthy Skin, Healthier You'></Header>
 
