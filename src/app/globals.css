@@ -47,7 +47,7 @@
 }
 
 .c {
-    @apply overflow-hidden min-h-[100dvh] p-6 md:px-[120px] py-9
+    @apply overflow-hidden min-h-[calc(100dvh-60px)] p-6 md:px-[120px] py-12
 }
 
 .b:hover, .button:hover  {

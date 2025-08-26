@@ -3,6 +3,7 @@ import React from 'react'
 import Banner from './Banner/Banner'
 import Products from './Products/Products'
 import Benefits from './benefits/page'
+import About from './about/page'
 
 export default function Home() {
   return (<>
@@ -43,5 +44,6 @@ export default function Home() {
     <Banner></Banner>
     <Benefits></Benefits>
     <Products></Products>
+    <About/>
   </>)
 }

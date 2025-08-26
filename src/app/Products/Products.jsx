@@ -9,11 +9,11 @@ export default function Products() {
                 {ourProducts.map(({ title, icon }, i) => (
                     <div key={i} className=' flex flex-col  items-center  justify-center gap-5  '>
                         <div className='bg-[#E7F1E8] rounded-full  w-40 h-40 flex items-center justify-center'>
-                            <div className='w-30 h-30 '>
+                            <div className='w-24 h-w-24 '>
                                 {React.cloneElement(icon, { className: "w-full h-full" })}
                             </div>
                         </div>
-                        <h3 className='text-green text-2xl font-semibold'>{title}</h3>
+                        <h3 className='text-green text-2xl '>{title}</h3>
                     </div>
                 ))}
             </div>
