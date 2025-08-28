@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import { Poppins } from 'next/font/google'
 import Navbar from "./navbar/navbar";
 import Footer from "./Footer/Footer";
+import ToTop from "./ToTop";
 
 const PoppinsFont = Poppins({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         className={`md:pt-[60px] bg-[#E7F1E9] pt-16   duration-200 transition-all font-poppins ${PoppinsFont.variable}`}
       >
         <Navbar />
+        <ToTop/>
         {children}
         <Footer />
       </body>
