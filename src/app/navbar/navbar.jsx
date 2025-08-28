@@ -12,7 +12,7 @@ export default function Navbar() {
         { path: '/benefits', name: 'Benefits' },
         { path: '/about', name: 'About us' },
         // { path: '/testimonials', name: 'Testimonials' },
-        { path: '/subscribe', name: 'Subscribe' },
+        // { path: '/subscribe', name: 'Subscribe' },
     ]
     const [open, setOpen] = useState(false)
     const handleOpen = () => {

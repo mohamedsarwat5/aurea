@@ -47,10 +47,11 @@ export default function CoverflowSwiper() {
 
 
     return (<>
-        <div className=" md:py-12 py-9">
+        <div className=" md:py-12 py-9 ">
             <Header title={"Testimonials"} desc={"What our customers say"}></Header>
-            <div className=" md:w-5xl px-4 md:mt-8 mt-4 mx-auto  ">
+            <div className=" md:w-5xl px-4 md:mt-8 mt-4 mx-auto rounded-2xl overflow-hidden">
                 <Swiper
+
                     effect={"coverflow"}
                     grabCursor={true}
                     centeredSlides={true}
@@ -76,8 +77,8 @@ export default function CoverflowSwiper() {
                     className="mySwiper"
                 >
                     {data.map((card, i) => (
-                        <SwiperSlide key={i}>
-                            <div className="flex flex-col gap-5 p-5 md:p-12 md:h-[300px] h-[250px]  bg-white  rounded-2xl">
+                        <SwiperSlide className="overflow-hidden rounded-2xl  " key={i}>
+                            <div className="flex flex-col gap-5 p-5 md:p-12 md:h-[300px] h-[250px]  bg-white overflow-hidden rounded-2xl">
                                 <div className="flex  items-center justify-between">
                                     <div className="flex items-center gap-5">
                                         <img className="rounded-full w-[70px] h-[70px] shrink-0 object-cover" src={card.img} alt="" />

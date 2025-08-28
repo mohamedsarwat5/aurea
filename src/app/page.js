@@ -5,6 +5,7 @@ import Products from './Products/Products'
 import Benefits from './benefits/page'
 import About from './about/page'
 import Testimonials from './testimonials/page'
+import Subscribe from './Subscribe/Subscribe'
 
 export default function Home() {
   return (<>
@@ -47,5 +48,6 @@ export default function Home() {
     <Products></Products>
     <About/>
     <Testimonials></Testimonials>
+    <Subscribe></Subscribe>
   </>)
 }
