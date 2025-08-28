@@ -4,11 +4,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import { Poppins } from 'next/font/google'
 import Navbar from "./navbar/navbar";
+import Footer from "./Footer/Footer";
 
 const PoppinsFont = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
-  weight: ['400', '700' ,'500' , '600']
+  weight: ['400', '700', '500', '600']
 })
 
 export const metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

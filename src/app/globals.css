@@ -23,9 +23,12 @@
     --color-dark-green: #34402f;
 }
 
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply bg-green
+}
 
-
-.a::after , .active::after{
+.a::after,
+.active::after {
     content: '';
     height: 2px;
     width: 0;
@@ -36,39 +39,44 @@
     transition: all .3s;
 }
 
-.a:hover::after , .active::after{
+.a:hover::after,
+.active::after {}
+
+
+.a:hover::after,
+.active::after {
+
+    @apply w-full
 }
 
-
-.a:hover::after ,.active::after {
-
-    @apply  w-full
-
-}
 
 .c {
     @apply md:min-h-[calc(100dvh-60px)] min-h-[100dvh]
 }
 
-.size{
-    @apply overflow-hidden  px-6 md:px-[120px] py-6 md:py-11
+.size {
+    @apply overflow-hidden px-6 md:px-[120px] py-6 md:py-11
 }
 
-.b:hover, .button:hover  {
+.b:hover, .button:hover {
     cursor: pointer;
     @apply bg-green/85
 }
 
-.button{
+.button {
     @apply transition-all duration-200 capitalize px-4 py-2 rounded-lg text-hero bg-green
 }
 
 
-h5{
+h5 {
     color: #426234;
 }
 
 
-.box{
-    @apply md:w-[200px] md:h-[180px] w-[170px] h-[160px]  text-light-white border  border-light-white flex  justify-center  flex-col gap-1 rounded-xl
+.box {
+    @apply md:w-[200px] md:h-[180px] w-[170px] h-[160px] text-light-white border border-light-white flex justify-center flex-col gap-1 rounded-xl
 }
+
+/* .swiper-pagination-bullet-active{
+    @apply
+} */

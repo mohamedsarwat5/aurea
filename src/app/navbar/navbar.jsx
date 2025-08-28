@@ -11,7 +11,7 @@ export default function Navbar() {
         { path: '/', name: 'Home' },
         { path: '/benefits', name: 'Benefits' },
         { path: '/about', name: 'About us' },
-        { path: '/testimonials', name: 'Testimonials' },
+        // { path: '/testimonials', name: 'Testimonials' },
         { path: '/subscribe', name: 'Subscribe' },
     ]
     const [open, setOpen] = useState(false)

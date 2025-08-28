@@ -4,6 +4,7 @@ import Banner from './Banner/Banner'
 import Products from './Products/Products'
 import Benefits from './benefits/page'
 import About from './about/page'
+import Testimonials from './testimonials/page'
 
 export default function Home() {
   return (<>
@@ -45,5 +46,6 @@ export default function Home() {
     <Benefits></Benefits>
     <Products></Products>
     <About/>
+    <Testimonials></Testimonials>
   </>)
 }
