@@ -27,13 +27,13 @@ export default function FormSubscribe() {
             ).then(
                 () => {
                     toast.success('Subscribed Successfully', { position: "top-center" }),
-                        resetForm()
-                    setLoading(false)
+                        resetForm(),
+                        setLoading(false)
                 },
                 (error) => {
                     toast.error("Something worng" + error.text, { position: "top-center" });
                 }
-            ).finally(()=>{setLoading(false)})
+            ).finally(() => { setLoading(false) })
         }
     })
 
