@@ -9,10 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-free": "^7.0.0",
+    "emailjs": "^4.0.3",
+    "formik": "^2.4.6",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "react-toastify": "^11.0.5",
     "swiper": "^11.2.10"
   },
   "devDependencies": {

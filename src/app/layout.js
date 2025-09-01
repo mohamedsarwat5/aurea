@@ -6,7 +6,8 @@ import { Poppins } from 'next/font/google'
 import Navbar from "./navbar/navbar";
 import Footer from "./Footer/Footer";
 import ToTop from "./ToTop";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const PoppinsFont = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
@@ -25,8 +26,12 @@ export default function RootLayout({ children }) {
         className={`md:pt-[60px] bg-[#E7F1E9] pt-16   duration-200 transition-all font-poppins ${PoppinsFont.variable}`}
       >
         <Navbar />
-        <ToTop/>
+        <ToTop />
         {children}
+        <ToastContainer
+        autoClose={2000}
+          style={{  zIndex: 999999999}}
+          position="top-center"/>
         <Footer />
       </body>
     </html>
