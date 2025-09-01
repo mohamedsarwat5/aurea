@@ -20,7 +20,7 @@ export default function FormSubscribe() {
         onSubmit: (values, { resetForm }) => {
             setLoading(true)
             emailjs.send(
-                "service_w671nwo",
+                "service_o10pwm4",
                 "template_6xngb9o",
                 { email: values.email },
                 "_8_aWp1MgejgtEnk2"
@@ -33,7 +33,7 @@ export default function FormSubscribe() {
                 (error) => {
                     toast.error("Something worng" + error.text, { position: "top-center" });
                 }
-            )
+            ).finally(()=>{setLoading(false)})
         }
     })
 
