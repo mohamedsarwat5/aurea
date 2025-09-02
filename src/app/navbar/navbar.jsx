@@ -50,7 +50,7 @@ export default function Navbar() {
                 {links.map(({ path, name }, i) => (
                     <Link onClick={handleOpen} className={`  font-medium transition-all duration-200 relative w-fit text-dark-green a ${activePath === path ? ' active' : ''} `} key={i} href={path}>{name}</Link>
                 ))}
-                <OrderBtn className="mt-auto" />
+                <OrderBtn onClick={handleOpen} className="mt-auto" />
             </ul>
         </div>
     </>)
