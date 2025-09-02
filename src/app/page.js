@@ -6,6 +6,7 @@ import Benefits from './benefits/page'
 import About from './about/page'
 import Testimonials from './testimonials/page'
 import Subscribe from './Subscribe/Subscribe'
+import OrderBtn from './OrderBtn/OrderBtn'
 
 export default function Home() {
   return (<>
@@ -33,7 +34,8 @@ export default function Home() {
             Sustainable, and Enriched with Antioxidants for Healthy, Timeless Skin
           </p>
           <div className='border border-dashed border-green mt-7 mb-5'></div>
-          <Link className='button w-fit !px-6' href={'/'}>order now</Link>
+          <OrderBtn className=''/>
+
         </div>
 
 

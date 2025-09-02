@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header.jsx/Header'
+import OrderBtn from '../OrderBtn/OrderBtn'
 
 export default function About() {
 
@@ -17,8 +18,8 @@ export default function About() {
     <div className='bg-light'>
       <div className=' c size flex flex-col gap-y-3  '>
         <Header title='about us' desc="The Heart Of Auréa"></Header>
-        <section className=' flex flex-col md:flex-row md:justify-between justify-center  items-center gap-y-9 md:mt-5 '>
-          <div className='order-1 flex flex-col gap-y-2'>
+        <section className=' flex flex-col md:flex-row md:justify-between justify-center md:gap-x-9 items-center gap-y-9 md:mt-5 '>
+          <div className='order-1 flex flex-col gap-y-2 '>
             <h2 className=' md:text-4xl text-[22px] text-dark-green md:mb-4'>At Auréa, we believe that:</h2>
             {data.map((item, i) => (
               <div key={i} className='flex items-center mb-4 gap-3'>
@@ -27,6 +28,8 @@ export default function About() {
               </div>
 
             ))}
+             <div className='border border-dashed border-green mt-2  mb-5'></div>
+             <OrderBtn />
           </div>
           <div className='md:w-[650px] shrink-0 md:order-2'>
             <img src="/hand.png" className='rounded-xl shrink-0' alt="" />

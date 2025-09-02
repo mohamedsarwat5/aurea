@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import logo from '../../../public/logo'
+import OrderBtn from '../OrderBtn/OrderBtn'
 
 export default function Navbar() {
 
@@ -36,20 +37,21 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <button className='md:inline-block hidden b button'>order now</button>
+            <OrderBtn className={'md:inline-block hidden'} />
         </nav>
 
         <div onClick={handleOpen} className={`${open ? 'block' : 'hidden'} absolute inset-0  bg-black/15`}> </div>
         <div className={`${open ? ' translate-x-0' : ' translate-x-[100%]'} transition-all duration-200 bg-green/30 backdrop-blur-xl fixed z-[999999999] top-0 bottom-0 end-0 w-[250px] `}>
-                <button onClick={handleOpen} className='absolute end-5 top-5'>
-                    <i className='fa-solid fa-xmark text-[#34402f]'></i>
-                </button>
+            <button onClick={handleOpen} className='absolute end-5 top-5'>
+                <i className='fa-solid fa-xmark text-[#34402f]'></i>
+            </button>
 
-                <ul className='flex flex-col p-5 pt-16 gap-y-4'>
-                    {links.map(({path, name} , i)=>(
-                        <Link onClick={handleOpen} className={`  font-medium transition-all duration-200 relative w-fit text-dark-green a ${activePath === path ? ' active' : ''} `} key={i} href={path}>{name}</Link>
-                    ))}
-                </ul>
+            <ul className='flex flex-col p-5 pt-16 gap-y-4  h-full'>
+                {links.map(({ path, name }, i) => (
+                    <Link onClick={handleOpen} className={`  font-medium transition-all duration-200 relative w-fit text-dark-green a ${activePath === path ? ' active' : ''} `} key={i} href={path}>{name}</Link>
+                ))}
+                <OrderBtn className="mt-auto" />
+            </ul>
         </div>
     </>)
 }
